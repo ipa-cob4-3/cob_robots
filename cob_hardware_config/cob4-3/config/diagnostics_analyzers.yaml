@@ -29,22 +29,22 @@ analyzers:
         path: Joystick
         contains: 'joy'
 
-  sensors:
-    type: diagnostic_aggregator/AnalyzerGroup
-    path: Sensors
-    analyzers:
-      laser_top:
-        type: diagnostic_aggregator/GenericAnalyzer
-        path: Scan Front
-        contains: 'laser_front'
-      laser_rear:
-        type: diagnostic_aggregator/GenericAnalyzer
-        path: Scan Right
-        contains: 'laser_right'
-      laser_front:
-        type: diagnostic_aggregator/GenericAnalyzer
-        path: Scan Left
-        contains: 'laser_left'
+#  sensors:
+#    type: diagnostic_aggregator/AnalyzerGroup
+#    path: Sensors
+#    analyzers:
+#      laser_top:
+#        type: diagnostic_aggregator/GenericAnalyzer
+#        path: Scan Front
+#        contains: 'laser_front'
+#      laser_rear:
+#        type: diagnostic_aggregator/GenericAnalyzer
+#        path: Scan Right
+#        contains: 'laser_right'
+#      laser_front:
+#        type: diagnostic_aggregator/GenericAnalyzer
+#        path: Scan Left
+#        contains: 'laser_left'
 
   motors:
     type: diagnostic_aggregator/AnalyzerGroup
@@ -55,10 +55,10 @@ analyzers:
         path: Base
         contains: 'base'
 
-  safety:
-    type: diagnostic_aggregator/GenericAnalyzer
-    path: Safety
-    contains: 'safety'
+#  safety:
+#    type: diagnostic_aggregator/GenericAnalyzer
+#    path: Safety
+#    contains: 'safety'
 
 ## remove diagnostics from gazebo in simulated case
   simulation:
